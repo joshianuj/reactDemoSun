@@ -1,0 +1,27 @@
+header{
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: rem(10px) rem(30px);
+  background: $white;
+  z-index: 5;
+  .row{
+    margin-bottom: 0;
+  }
+  h1{
+    margin: 0;
+    font-size: rem(28px);
+    font-weight: normal;
+    letter-spacing: rem(4px);
+    width: 100%;
+    text-align: center;
+    @include mq(md){
+      width: auto;
+      float: left;
+    }
+  }
+  @include mq(md){
+    background: none;
+  }
+}

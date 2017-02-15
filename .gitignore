@@ -1,0 +1,17 @@
+.idea
+
+#Node modules
+/node_modules
+
+#Project compiled destination
+
+#debug log from npm
+npm-debug.log*
+
+/dist
+
+.DS_store
+app/.DS_Store
+frontend/.DS_Store
+
+config/env.js

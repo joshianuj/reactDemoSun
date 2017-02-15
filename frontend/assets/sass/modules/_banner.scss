@@ -1,0 +1,88 @@
+.page-banner{
+  width: 100%;
+  background: url('../images/banner-1.jpg') no-repeat 0;
+  background-size: cover;
+  text-align: center;
+  padding: rem(70px) 0;
+  &:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+  .overlay{
+    opacity: 0.26;
+    z-index: 0;
+  }
+  @include mq(lg){
+    padding: 0;
+  }
+}
+.banner-content{
+  width: 50%;
+  color: $text-color-secondary;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  @include mq(sm){width: 100%;}
+  p{
+    margin: 0;
+    margin-bottom: rem(50px);
+    letter-spacing: 2px;
+  }
+  button{
+    margin-right: rem(10px);
+    &:last-child{
+      margin: 0;
+    }
+  }
+  h2{
+    margin: 0;
+    margin-bottom: rem(30px);
+    font-size: rem(28px);
+    text-transform: uppercase;
+    color: $text-color-secondary;
+    font-weight: bold;
+    letter-spacing: rem(4px);
+  }
+}
+.banner-select-wrapper{
+  width: 100%;
+  padding: 0 rem(15px);
+  margin: 0 auto;
+  margin-bottom: rem(30px);
+  p{
+    text-transform: uppercase;
+    font-size: $lg-font-size;
+    margin-bottom: rem(20px);
+    letter-spacing: 2px;
+  }
+  @include mq(lg){
+      width: 700px;
+      padding: 0;
+  }
+}
+.btn-grp{
+  p{
+    text-transform: uppercase;
+    font-size: $lg-font-size;
+    margin-bottom: rem(20px);
+    letter-spacing: 2px;
+  }
+}
+.fancy-btn{
+  width: 150px;
+  border: none;
+  background: #f8781a;
+  color: $white;
+  border-radius: 20px;
+  padding: rem(10px);
+  &:hover{
+    transition: all 0.3s ease-in-out;
+    background: darken(#f8781a,6%);
+  }
+  &:focus{
+    background: darken(#f8781a,6%);
+  }
+}

@@ -1,0 +1,75 @@
+.main{
+  padding-top: rem(62px);
+}
+// .col{
+//   .card{
+//       padding: rem(20px) rem(10px);
+//   }
+// }
+// .collection{
+//   &.with-header{
+//     padding: 0 rem(10px);
+//     border-color: $gray;
+//     .collection-header{
+//       margin: 0 rem(-10px);
+//       background: $secondary-color;
+//       text-align: center;
+//       color: $white;
+//       h3{
+//         margin: 0;
+//       }
+//     }
+//     .collection-item{
+//       padding: 5px 0;
+//       font-size: rem(12px);
+//     }
+//   }
+//   .collection-item{
+//     font-size: rem(12px);
+//     padding: 5px;
+//   }
+// }
+.header{
+  padding: 0 10px;
+}
+.collection{
+  background: #fff;
+}
+.card{
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+  }
+}
+.card.horizontal .card-image {
+  max-width: 36%;
+}
+.box-block{
+  &-header{
+    padding: rem(20px) rem(15px);
+    border-bottom: 1px solid $gray;
+    .custom-label{
+      line-height: rem(28px);
+    }
+  }
+  p{
+    margin-bottom: 0;
+  }
+  &-content{
+    &-row{
+      padding: rem(10px) 0;
+      &.orient{
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+  label{
+    &:after{
+      display: inherit;
+    }
+  }
+}
+.custom-block{
+  padding: rem(10px);
+}

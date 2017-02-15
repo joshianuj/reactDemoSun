@@ -1,0 +1,45 @@
+.morph{
+  animation: divMorph 0.5s forwards;
+}
+@keyframes divMorph{
+  from{
+    background: rgba(255,255,255,0.4);
+  }
+  to{
+    background: #fff;
+  }
+}
+.slideUp{
+  &-enter{
+    transform: translateY(-100%);
+    transition: 0.5s;
+    &-active{
+      transform: translateY(0);
+    }
+  }
+  &-leave{
+    transform: translateY(0);
+    transition: 0.5s;
+    &-active{
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.fadeIn{
+  &-enter{
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.5s;
+    &-active{
+      opacity: 1;
+    }
+  }
+  &-leave{
+    opacity: 1;
+    transition: all 0.1s ease-in-out;
+    &-active{
+      opacity: 0;
+    }
+  }
+}

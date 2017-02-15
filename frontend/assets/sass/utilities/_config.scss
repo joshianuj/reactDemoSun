@@ -1,0 +1,117 @@
+//Web Address
+$domain-name: "www.someproject.com.au";
+
+//Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+//Font Stacks
+
+//$font-url--google : abc;
+
+// $typefaces
+// Configuration of webfonts imports.
+// $typefaces - {map}
+// @family - {string}
+// @weight - {integer} or {keyword} i.e. 800, bold
+// @style - {keyword} i.e. normal, italic
+
+// $typefaces: (
+//  'open_sansregular': (
+//    family: 'open_sansregular',
+//    weight: normal,
+//    style: normal,
+//  ),
+// );
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bdzfi2');
+  src:  url('../fonts/icomoon.eot?bdzfi2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bdzfi2') format('truetype'),
+    url('../fonts/icomoon.woff?bdzfi2') format('woff'),
+    url('../fonts/icomoon.svg?bdzfi2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flat-roof:before {
+  content: "\e900";
+}
+.icon-pitched-roof:before {
+  content: "\e901";
+}
+
+
+
+$font-family-sans-fallback: 'Arial', sans-serif;
+$font-family-sans: 'open_sansregular', $font-family-sans-fallback;
+$font-family-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+$font-family-monospace: 'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier', monospace;
+$font-family--primary : $font-family-sans;
+$font-family--secondary : 'Lato', serif;
+
+//Colors
+$white: #fff;
+$black: #000;
+$gray: #e0e0e0;
+$light-gray: #eee;
+$blackish-gray: #676c71;
+
+//Breakpoints
+$sm-device: 768px;
+$md-device: 992px;
+$lg-device: 1200px;
+
+//Font variables
+$default-font-size: $base__font-size - 2px;
+$small-font-size: $default-font-size - 2px;
+$lg-font-size: $default-font-size + 2px;
+
+//Heading Vairables
+$heading-line-height: 28px !default;
+$head1-font-size: 26px !default;
+$head2-font-size: $head1-font-size - 4px !default;
+$head3-font-size: $head1-font-size - 8px !default;
+
+//Color Usage
+$primary-color: #0faaf3;
+$secondary-color: #f8781a;
+$color-text: $black;
+$color-link: blue;
+$bg-color: #fcfcfc;
+$bg-gray: #e0e0e0;
+$header-bg: transparentize($white, 0.8);
+$text-color-secondary: $white;
+$custom-label-color: $blackish-gray;
+$icon-color: #828282;
+$footer-text-color: #d9d9d9;
+$input-gray: #c7c6c6;
+//Path to Assets
+$path--rel: "../images";

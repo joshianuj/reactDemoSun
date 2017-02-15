@@ -1,0 +1,245 @@
+// Styling for icons in forms
+.input-icon{
+  background: $white;
+  padding: rem(7px) 0;
+  text-align: center;
+  border: 1px solid $input-gray;
+  color: $icon-color;
+  @include mq(md){
+    width: 12%;
+  }
+  @include mq(lg){
+    width: 8%;
+  }
+  &.input-icon-banner{
+    background: none;
+    color: $white;
+    height: 3.5rem;
+    line-height: 2.8rem;
+    margin-right: 1%;
+  }
+}
+
+//Select Form Styling
+select{
+  @extend %default-input;
+  @extend %icon-input-mq;
+  &.banner-select{
+    background: none;
+    color: $white;
+    font-size: rem(22px);
+    height: 3.5rem;
+    padding: rem(10px);
+    text-align: center;
+    &:focus{
+      outline: none;
+    }
+    option{
+      color: $black;
+    }
+  }
+}
+
+//Input Form Styling
+input{
+  @extend %default-input;
+  padding: rem(5px);
+  @include mq(sm){
+    margin-bottom: rem(10px);
+  }
+  @include mq(lg){
+    margin-bottom: 0;
+  }
+}
+.icon-input{
+  input{
+    @extend %icon-input-mq;
+  }
+}
+.input-field{
+  margin-bottom: 20px;
+}
+.row-form{
+  margin-bottom: rem(20px);
+  input{
+    width: 100%;
+    margin-right: rem(4px);
+    &:last-child{
+      margin: 0;
+    }
+    @include mq(md){
+      width: 33%;
+    }
+  }
+}
+
+.single-line{
+  span, a{
+    float: left;
+  }
+}
+//Label Styling
+[type="checkbox"] + label {
+    height: auto;
+    line-height: rem(22px);
+    font-size: $default-font-size;
+}
+
+.custom-label{
+  @extend %custom-label;
+  margin-bottom: rem(10px);
+  display: block;
+  margin-right: 0;
+}
+.custom-row-label{
+  @extend %custom-label;
+  display: inline-block;
+
+}
+
+//Button Styling
+.big-btn{
+  width: 100%;
+  height: 186px;
+  text-align: center;
+  vertical-align: middle;
+  background: #f3f3f3;
+  color: #828282;
+  font-size: rem(36px);
+}
+.btn-floating{
+  position: fixed;
+  bottom: rem(30px);
+  right: rem(30px);
+}
+.btn.sw-btn{
+  border-radius: 40px;
+  min-width: 200px;
+}
+
+//Paragraph reset for Materialize
+p{
+  margin: 0;
+}
+form{
+  p{
+    margin-bottom: 0;
+  }
+}
+
+//Radio Button Styling
+.custom-radio{
+  display: inline-block;
+  text-align: center;
+  border: 1px solid $input-gray;
+  border-radius: 2px;
+  min-width: 180px;
+  cursor: pointer;
+  i, .custom-font-icon{
+    font-size: 32px;
+    float: left;
+    color: #757575;
+    padding: rem(10px);
+    border-right: 1px solid $input-gray;
+    display: inline-block;
+  }
+  .radio-img-wrap{
+    float: left;
+    width: 53px;
+    height: 52px;
+    display: inline-block;
+    padding: rem(10px);
+    border-right: 1px solid $gray;
+  }
+  &:hover{
+    border: 1px solid $primary-color;
+    i{
+      border-right: 1px solid $primary-color;
+    }
+  }
+}
+.radio-para{
+  padding-left: 35px;
+  font-size: $small-font-size;
+  display: block;
+}
+.radio-wrap{
+  margin: rem(10px) rem(20px) 0 0;
+  float: left;
+}
+.radio-wrapper{
+   width: 100%;
+    @include mq(md){
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+.radio-label{
+  display: inline-block;
+  line-height: rem(32px);
+  float: left;
+  padding: rem(10px);
+}
+.radio-title{
+  @extend %custom-label;
+  width: 100%;
+  float: left;
+  margin-right: rem(10px);
+  line-height: rem(64px);
+  @include mq(lg){
+    width: 152px;
+  }
+}
+.radio-active{
+  border: 1px solid $primary-color;
+  &.custom-radio{
+    position: relative;
+    i, .custom-font-icon, .radio-img-wrap{
+      border-right: 1px solid $primary-color;
+      color: $white;
+      background: $primary-color;
+    }
+    .radio-tick{
+      @extend %transition;
+      color: $white $primary-color;
+      position: absolute;
+      top: -25%;
+      left: 50%;
+      padding: 0;
+      font-size: rem(16px);
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      padding: rem(3px);
+      background: $primary-color;
+    }
+    .radio-label{
+      color: $primary-color;
+    }
+  }
+}
+.btn-small{
+  @extend %btn-small;
+  &-icon{
+    @extend %btn-small-alt;
+    padding: rem(9px);
+    text-align: center;
+    margin: 0;
+    i{
+      float: none;
+      margin: 0;
+    }
+    &:hover{
+      padding: rem(9px);
+      text-align: center;
+      margin: 0;
+    }
+  }
+  &-alt{
+    @extend %btn-small-alt;
+  }
+}
+
+.col > span{
+  display: block;
+  padding-right: 10px;
+}

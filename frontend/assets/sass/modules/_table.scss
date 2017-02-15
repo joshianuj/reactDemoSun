@@ -1,0 +1,9 @@
+table{
+  margin-bottom: rem(20px);
+}
+td,th{
+  font-size: $small-font-size;
+}
+.table-value{
+  min-width: 70px;
+}

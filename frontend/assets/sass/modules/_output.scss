@@ -1,0 +1,45 @@
+.solar-size{
+  text-align: center;
+  position: relative;
+  p,span{
+    font-family: $font-family--secondary;
+    font-size: rem(22px);
+    font-weight: bold;
+  }
+  p{
+    display: block;
+    color: lighten($black, 8%);
+  }
+  span{
+    display: inline-block;
+    font-size: rem(20px);
+    &:first-child{
+      font-size: rem(70px);
+    }
+  }
+}
+
+.export-pdf-btn{
+  position: absolute;
+  top: rem(20px);
+  right: rem(25px);
+}
+
+table{
+  margin-bottom: 10px;
+}
+.note-block{
+  font-size: $small-font-size;
+  padding: rem(10px);
+  background: #ececec;
+  i{
+    width: 2%;
+    margin-right: 2%;
+    color: $icon-color;
+  }
+  span{
+      display: block;
+      float: right;
+      width: 96%;
+  }
+}

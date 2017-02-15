@@ -1,0 +1,25 @@
+%default-input{
+  width: 100%;
+  height: 2.5rem;
+  font-size: $small-font-size;
+  border: 1px solid $input-gray;
+}
+%icon-input-mq{
+  @include mq(sm){
+    margin-bottom: rem(10px);
+  }
+  @include mq(md){
+    width: 87%;
+  }
+  @include mq(lg){
+    width: 91%;
+    margin-bottom: 0;
+  }
+}
+%custom-label{
+  font-family: $font-family--secondary;
+  font-size: $default-font-size;
+  font-weight: normal;
+  color: $custom-label-color;
+  margin-right: rem(10px);
+}
